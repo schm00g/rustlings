@@ -3,6 +3,7 @@
 
 mod sausage_factory {
     // Don't let anybody outside of this module see this!
+    // By default, everything in Rust is private (with 2 exceptions)
     fn get_secret_recipe() -> String {
         String::from("Ginger")
     }
@@ -14,5 +15,6 @@ mod sausage_factory {
 }
 
 fn main() {
+    // sausage_factory::get_secret_recipe();
     sausage_factory::make_sausage();
 }
