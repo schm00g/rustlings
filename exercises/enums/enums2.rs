@@ -1,11 +1,15 @@
 // enums2.rs
 // Make me compile! Execute `rustlings hint enums2` for hints!
-
-// I AM NOT DONE
+// enums are means of creating data types
+// variants of the enum are namespaced under its identifier, and we use a double colon to separate the two
 
 #[derive(Debug)]
 enum Message {
     // TODO: define the different variants used below
+    Move {x: i32, y: i32},
+    Echo(String),
+    ChangeColor(u32, u32, u32),
+    Quit,
 }
 
 impl Message {
